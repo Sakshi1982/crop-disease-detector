@@ -1,0 +1,154 @@
+{
+  "Apple_scab___Apple": {
+    "disease": "Apple Scab",
+    "management": "Apply fungicides and remove fallen leaves."
+  },
+  "Black_rot___Apple": {
+    "disease": "Black Rot",
+    "management": "Prune infected branches and use fungicides."
+  },
+  "Cedar_apple_rust___Apple": {
+    "disease": "Cedar Apple Rust",
+    "management": "Remove nearby junipers and use fungicides."
+  },
+  "healthy___Apple": {
+    "disease": "Healthy Apple",
+    "management": "No action needed."
+  },
+  "healthy___Blueberry": {
+    "disease": "Healthy Blueberry",
+    "management": "No action needed."
+  },
+  "Powdery_mildew___Cherry_(including_sour)": {
+    "disease": "Powdery Mildew",
+    "management": "Use sulfur sprays and ensure good airflow."
+  },
+  "healthy___Cherry_(including_sour)": {
+    "disease": "Healthy Cherry",
+    "management": "No action needed."
+  },
+  "Cercospora_leaf_spot Gray_leaf_spot___Corn_(maize)": {
+    "disease": "Gray Leaf Spot",
+    "management": "Use resistant hybrids and rotate crops."
+  },
+  "Common_rust___Corn_(maize)": {
+    "disease": "Common Rust",
+    "management": "Use resistant varieties and fungicides."
+  },
+  "Northern_Leaf_Blight___Corn_(maize)": {
+    "disease": "Northern Leaf Blight",
+    "management": "Plant resistant varieties and apply fungicides."
+  },
+  "healthy___Corn_(maize)": {
+    "disease": "Healthy Corn",
+    "management": "No action needed."
+  },
+  "Black_rot___Grape": {
+    "disease": "Black Rot",
+    "management": "Prune infected vines and use fungicides."
+  },
+  "Esca_(Black_Measles)___Grape": {
+    "disease": "Esca (Black Measles)",
+    "management": "Remove infected vines and avoid pruning in wet conditions."
+  },
+  "Leaf_blight_(Isariopsis_Leaf_Spot)___Grape": {
+    "disease": "Leaf Blight",
+    "management": "Improve air circulation and apply fungicides."
+  },
+  "healthy___Grape": {
+    "disease": "Healthy Grape",
+    "management": "No action needed."
+  },
+  "Haunglongbing_(Citrus_greening)___Orange": {
+    "disease": "Citrus Greening",
+    "management": "Remove infected trees and control psyllids."
+  },
+  "Bacterial_spot___Peach": {
+    "disease": "Bacterial Spot",
+    "management": "Use copper sprays and disease-free seeds."
+  },
+  "healthy___Peach": {
+    "disease": "Healthy Peach",
+    "management": "No action needed."
+  },
+  "Bacterial_spot___Pepper,_bell": {
+    "disease": "Bacterial Spot",
+    "management": "Use disease-free seeds and copper-based sprays."
+  },
+  "healthy___Pepper,_bell": {
+    "disease": "Healthy Bell Pepper",
+    "management": "No action needed."
+  },
+  "Early_blight___Potato": {
+    "disease": "Early Blight",
+    "management": "Rotate crops and apply fungicides."
+  },
+  "Late_blight___Potato": {
+    "disease": "Late Blight",
+    "management": "Use certified seed and fungicides."
+  },
+  "healthy___Potato": {
+    "disease": "Healthy Potato",
+    "management": "No action needed."
+  },
+  "healthy___Raspberry": {
+    "disease": "Healthy Raspberry",
+    "management": "No action needed."
+  },
+  "healthy___Soybean": {
+    "disease": "Healthy Soybean",
+    "management": "No action needed."
+  },
+  "Powdery_mildew___Squash": {
+    "disease": "Powdery Mildew",
+    "management": "Use resistant varieties and apply fungicides."
+  },
+  "Leaf_scorch___Strawberry": {
+    "disease": "Leaf Scorch",
+    "management": "Remove infected leaves and avoid overhead watering."
+  },
+  "healthy___Strawberry": {
+    "disease": "Healthy Strawberry",
+    "management": "No action needed."
+  },
+  "Bacterial_spot___Tomato": {
+    "disease": "Bacterial Spot",
+    "management": "Use copper-based sprays and disease-free seeds."
+  },
+  "Early_blight___Tomato": {
+    "disease": "Early Blight",
+    "management": "Use crop rotation and fungicides."
+  },
+  "Late_blight___Tomato": {
+    "disease": "Late Blight",
+    "management": "Remove infected plants and apply fungicides."
+  },
+  "Leaf_Mold___Tomato": {
+    "disease": "Leaf Mold",
+    "management": "Use resistant varieties, proper ventilation, and fungicides."
+  },
+  "Septoria_leaf_spot___Tomato": {
+    "disease": "Septoria Leaf Spot",
+    "management": "Remove infected leaves and apply fungicides."
+  },
+  "Spider_mites Two-spotted_spider_mite___Tomato": {
+    "disease": "Spider Mites",
+    "management": "Use insecticidal soap and maintain humidity."
+  },
+  "Target_Spot___Tomato": {
+    "disease": "Target Spot",
+    "management": "Use fungicides and remove affected leaves."
+  },
+  "Tomato_Yellow_Leaf_Curl_Virus___Tomato": {
+    "disease": "Yellow Leaf Curl Virus",
+    "management": "Use resistant varieties and control whiteflies."
+  },
+  "Tomato_mosaic_virus___Tomato": {
+    "disease": "Tomato Mosaic Virus",
+    "management": "Remove infected plants and sanitize tools."
+  },
+  "healthy___Tomato": {
+    "disease": "Healthy Tomato",
+    "management": "No action needed."
+  }
+}

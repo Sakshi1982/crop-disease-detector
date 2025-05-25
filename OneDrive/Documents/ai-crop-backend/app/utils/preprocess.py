@@ -1,0 +1,15 @@
+import numpy as np
+from tensorflow.keras.preprocessing import image
+import json
+import os
+
+def preprocess_image(img_path, target_size=(224, 224)):
+    img = image.load_img(img_path, target_size=target_size)
+    img_array = image.img_to_array(img)
+    img_array = img_array / 255.0  # normalize to [0,1]
+    return np.expand_dims(img_array, axis=0)
+
+def load_disease_info():
+    json_path = os.path.join(os.path.dirname(__file__), 'disease_info.json')
+    with open(json_path, 'r') as f:
+        return json.load(f)

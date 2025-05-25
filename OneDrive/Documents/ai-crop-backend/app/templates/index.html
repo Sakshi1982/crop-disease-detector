@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Disease Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px auto;
+    }
+    #preview {
+      margin-top: 15px;
+    }
+    #result, #management {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    img {
+      margin-top: 10px;
+      max-height: 250px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Crop Disease Detection 🌾</h1>
+
+  <form id="upload-form" enctype="multipart/form-data">
+    <input type="file" id="imageInput" name="file" accept="image/*" required><br><br>
+    <button type="submit">Detect Disease</button>
+  </form>
+
+  <div id="preview"></div>
+  <div id="result"></div>
+  <div id="management"></div>
+
+  <script>
+    const form = document.getElementById("upload-form");
+    const imageInput = document.getElementById("imageInput");
+
+    // Image preview
+    imageInput.addEventListener("change", () => {
+      const file = imageInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = e => {
+          document.getElementById("preview").innerHTML = `<img src="${e.target.result}" alt="Preview">`;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    // Handle form submit
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      const res = await fetch("/predict", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await res.json();
+
+      document.getElementById("result").innerHTML = `
+        <h2>✅ Disease: ${data.prediction}</h2>
+        <p>🧪 Confidence: ${data.confidence}%</p>
+        <img src="static/uploads/${data.filename}" alt="Uploaded Image">
+      `;
+
+      document.getElementById("management").innerHTML = `
+        <h3>🌿 Management Tip:</h3>
+        <p>${data.management}</p>
+      `;
+    });
+  </script>
+    <!-- END of your form and other content -->
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+
+</body>
+</html>
+
+
+
